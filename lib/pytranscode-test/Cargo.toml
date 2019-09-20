@@ -1,0 +1,9 @@
+[package]
+name = "pytranscode-test"
+version = "0.0.1"
+authors = ["adumbidiot"]
+edition = "2018"
+
+[build-dependencies]
+pytranscode = { path = "../../" }
+rustpython-parser = { git = "https://github.com/RustPython/RustPython", rev = "6cc4ebb829f9a347e2e2056b3f8bee64adc388c0" }

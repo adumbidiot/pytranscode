@@ -1,0 +1,23 @@
+[package]
+name = "pytranscode"
+version = "0.0.1"
+authors = ["adumbidiot"]
+edition = "2018"
+
+[lib]
+name = "pytranscode"
+path = "src/lib.rs"
+
+[[bin]]
+name = "pytranscode"
+path = "src/main.rs"
+
+[dependencies]
+rustpython-parser = { git = "https://github.com/RustPython/RustPython", rev = "59d4e4e7c10f04d697c409757dc8156a172f57a4" }
+quote = "1.0.2"
+proc-macro2 = "1.0.3"
+rustfmt = "0.10.0"
+rustfmt-nightly = "1.4.8"
+
+[dev-dependencies]
+pytranscode-test = { path = "lib/pytranscode-test" }
